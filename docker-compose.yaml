@@ -1,0 +1,34 @@
+version: '3.8'
+
+services:
+  api:
+    container_name: delman-api
+    build: ./delman-api
+    ports:
+      - '3000:3000'
+    env_file:
+      - ./delman-api/.env
+    depends_on:
+      - db
+    restart: always
+
+  scheduler:
+    build: ./delman-scheduler
+    env_file:
+      - ./delman-scheduler/.env
+    depends_on:
+      - db
+
+  db:
+    image: postgres:11
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_DB: hospital_db
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+    ports:
+      - '5432:5432'
+
+volumes:
+  postgres_data:

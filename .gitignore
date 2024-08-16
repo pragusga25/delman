@@ -1,0 +1,30 @@
+# Ignore __pycache__ folders in all directories
+**/__pycache__/
+
+# Ignore coverage_html_report in delman-api
+delman-api/coverage_html_report/
+
+# Ignore credentials.json in delman-scheduler
+delman-scheduler/credentials.json
+
+# Common Python ignores
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+.git
+.mypy_cache
+.pytest_cache
+.hypothesis

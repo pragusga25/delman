@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  scheduler:
+    container_name: delman-scheduler
+    build: .
+    volumes:
+      - ./credentials.json:/app/credentials.json
+      - ./.env:/app/.env
+    restart: always

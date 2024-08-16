@@ -1,0 +1,5 @@
+google-cloud-bigquery
+sqlalchemy
+schedule
+psycopg2-binary
+python-dotenv

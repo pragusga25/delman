@@ -1,0 +1,20 @@
+[run]
+source = app
+
+[report]
+exclude_lines =
+    pragma: no cover
+    def __repr__
+    if self.debug:
+    if __name__ == .__main__.:
+    raise NotImplementedError
+    pass
+    except ImportError:
+    def __str__
+
+omit =
+    */app/services/__init__.py
+    */app/routes/__init__.py
+
+[html]
+directory = coverage_html_report
