@@ -39,8 +39,8 @@ Before running the applications, please follow these crucial steps:
 1. Clone this repository:
 
    ```
-   git clone https://github.com/your-username/delman-projects.git
-   cd delman-projects
+   git clone https://github.com/pragusga/delman.git
+   cd delman
    ```
 
 2. Adjust the environment variables:
